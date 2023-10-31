@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+    <style>
+        #box{
+            width:400px ;
+            height:300px ;
+            border: 1px solid red;
+            background: pink;
+            margin: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+    
+
+
+    <script>
+        var target = document.querySelector("#box");
+        target.addEventListener("click",function(e){
+            console.clear();
+            var k;
+            switch (true) {
+                case e.metaKey:
+                    k = "metaKey";
+                    break;
+                    case e.altKey:
+                        k = "altKey";
+                    
+                    break;
+                    case e.shiftKey:
+                        k = e.shiftKey;
+                        break;
+                        case e.ctrlKey:
+                            k = e.ctrlKey;
+                            break;
+
+            
+                default:
+                    k = "no key prased";
+                    break;
+            }
+            console.log(k);
+
+        });
+
+
+            // var ctrl = e.ctrlKey;
+            // if(ctrl){
+            //     console.log("you press the contrlkey");
+
+            // }else{
+            //     console.log("you noot press ctrlkey");
+
+            // }
+
+            // var shift = e.shiftKey;
+            // if(shift){
+            //     console.log("you press the shiftkey");
+
+            // }else{
+            //     console.log("you not press shiftkey");
+
+            // }
+
+            // var alt = e.altKey;
+            // if(alt){
+            //     console.log("you press the altkey");
+
+            // }else{
+            //     console.log("you noot press altkey");
+
+            // }
+
+            // var meta = e.metaKey;
+            // if(meta){
+            //     console.log("you press the metakey");
+
+            // }else{
+            //     console.log("you noot press metakey");
+
+            // }
+
+           
+
+            
+            // console.log(ctrl);
+
+        
+    </script>
+    
+</body>
+</html>

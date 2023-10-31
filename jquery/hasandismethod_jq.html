@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+</head>
+<body>
+
+    <script src="../jquery/jqueryfile.js"></script>
+    <script>
+        
+        $(document).ready(function(){  
+            // $("p").has('span,b').css('background','red')
+            // $("li").has('span,b').css('background','red')
+            // $("p").has('.test').css('background','red')
+
+
+            if($('p').parent().is('div')){
+                console.log($('p').parent().is('div'));
+            }
+
+            $('p').click(function(){
+                if($(this).parent().is('div')){
+                $(this).css('background','pink')
+            }
+
+            })
+            
+            
+            
+            
+            
+        });
+    </script>
+    
+</body>
+</html>

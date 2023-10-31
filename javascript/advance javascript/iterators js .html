@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>advancejavascript</title>
+    <script>
+        function numberIterator(arr){
+            var nextnum = 0;
+            return{
+                next(){
+                    if(nextnum<arr.length){
+                        return{
+                        value :arr[nextnum++],
+                        done :false
+                    }
+
+                    }else{
+                        return{      
+                        done :true
+
+                        }
+                        
+                    }
+                    
+                }
+            }
+
+        }
+         let numbers = [300,400,600,];
+         
+         let num = numberIterator(numbers);
+         console.log(num.next());
+         num.next();
+         console.log(num.next());
+         console.log(num.next());
+
+
+
+         
+        
+
+
+
+
+        // let str = "shubham" ;
+        // for(let char of str){
+        //     console.log(char);
+        // }
+
+
+
+
+        // let number = [300,400,600,800,900];
+
+        // let str = "shubham" ; 
+
+        // // let iter = number[Symbol.iterator]();
+
+        // let iter = str[Symbol.iterator]();
+
+        // let result = iter.next();
+        // while(!result.done){
+        //     console.log('result.value');
+        //     result = iter.next();
+
+        // }
+
+
+
+
+        // let number = [300,400,600];  
+        // let iter = number[Symbol.iterator]();
+        // iter.next();
+        // console.log(iter.next().value);
+        // console.log(iter.next().done);
+        // iter.next();
+        // iter.next();
+        // console.log("shubham");
+        // console.log("shubham");
+        // console.log("shubham");
+        
+        // console.log(iter.next());
+        
+
+
+
+        // let number = [300,400,600];
+        // // console.log(typeof number [Symbol.iterator] );
+        // let iter = number[Symbol.iterator]();
+        // console.log(iter.next());
+        // console.log(iter.next());
+        // console.log(iter.next());
+        // console.log(iter.next());
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+</head>
+<body>
+    <h1>shubham</h1>
+    <div id="box" class="abx">
+        <h3>shubham</h3>
+        <p>this a dhjdhisslkpsjolxpxjto you abiutsloxjhxpujxkpdidj.</p>
+
+    </div>
+    <button id="fadeinbtn">fadein</button>
+    <button id="fadeoutbtn">fadeout</button>
+    <button id="fadetogglebtn">fadetoggle</button>
+    <button id="fadetobtn">fadeto</button>
+    <script src="../jquery/jqueryfile.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#fadeoutbtn").click(function(){
+                // $('#box').fadeOut()
+                $('#box').fadeOut('slow')
+                $('#box').fadeOut(2000,function(){
+                    console.log("shubhm jha")
+                });
+            })
+            $("#fadeinbtn").click(function(){
+                // $('#box').fadeOut()
+                $('#box').fadeIn('slow')
+            })
+
+            $("#fadetogglebtn").click(function(){
+                 $('#box').fadeToggle()
+               
+            })
+            $("#fadetobtn").click(function(){
+                //  $('#box').fadeTo(2000,0.5)
+                $('#box').fadeTo(2000,0.5,function(){
+                    console.log("shubham is back")
+                })
+               
+            })
+        })
+    </script>
+    
+</body>
+</html>

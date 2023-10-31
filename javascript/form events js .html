@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+
+<body>
+    <form action="" onsubmit="submitFunction()">
+        <label for="">name</label>
+        <input type="text" id="fname" onfocus="focusfunction(this)" onblur="blurfunction(this)"
+            oninput="inputfunction(this)" onselect="selectfunction()" oninvalid="alert('plese fill the first Name')"
+            required><Br><br>
+        <label for="">class</label>
+        <input type="text" id="" onfocus="focusfunction(this)" onblur="blurfunction(this)"><Br><br>
+        <label for="">country</label>
+        <select id="" onfocus="focusfunction(this)" onblur="blurfunction(this)" onchange="changefunction(this)">
+            <option value="india">india</option>
+            <option value="nepal">nepal</option>
+            <option value="pakistan">pakistan</option>
+            <option value="australiya">australiya</option>
+        </select>
+        <input type="submit">
+        <br>
+    </form>
+    <div id="test" style="border: 1px solid red;">
+
+    </div>
+    <script>
+        function focusfunction(element) {
+            // document.getElementById("fname").style.background = "lime";
+            element.style.background = "lime";
+        }
+        function blurfunction(element) {
+            element.style.background = "";
+        }
+
+
+        function inputfunction(element) {
+            var x = element.value;
+            document.getElementById("test").innerHTML = x;
+        }
+        function changefunction(element) {
+            var x = element.value;
+            document.getElementById("test").innerHTML = x;
+
+        }
+
+        function selectfunction(element) {
+            console.log("you selected some text");
+
+        }
+        function submitFunction(element) {
+            // console.log("you submited a form");
+            var x = document.getElementById("fname").value
+            alert("hello" + x);
+            // alert("you submited a form");
+        }
+
+    </script>
+
+</body>
+
+</html>

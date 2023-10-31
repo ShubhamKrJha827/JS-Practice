@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+</head>
+<body>
+    <h1>shubham</h1>
+    <div id="box" class="abx">
+        <h3>shubham</h3>
+        <p>this a dhjdhisslkpsjolxpxjto you abiutsloxjhxpujxkpdidj.</p>
+
+    </div>
+    <button id="hidebtn">hide</button>
+    <button id="showbtn">show</button>
+    <button id="togglebtn">toggle</button>
+    <script src="../jquery/jqueryfile.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#hidebtn").click(function(){
+                // $("#box").hide("fast");
+                // $("#box p").hide();
+                // $("#box").hide("1000");
+                $("#box").hide(1000,function(){
+                    console.log("its shubham")
+                });
+            })
+
+            $("#showbtn").click(function(){
+                $("#box ").show("slow");
+            })
+            $("#togglebtn").click(function(){
+                $("#box").toggle();
+            })
+        })
+    </script>
+    
+</body>
+</html>

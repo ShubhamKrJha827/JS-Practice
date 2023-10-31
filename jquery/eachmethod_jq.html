@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+</head>
+<body>
+    <h1>shubham </h1>
+    <ul>
+        <li>apple</li>
+        <li>orange</li>
+        <li>banana</li>
+        <li>grapes</li>
+    </ul>
+
+
+    <script src="../jquery/jqueryfile.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('li').each(function(){
+                // console.log($(this).text())
+                $(this).text("shubham");
+            })
+        })
+
+    </script>
+    
+</body>
+</html>

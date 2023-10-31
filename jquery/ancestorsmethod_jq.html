@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+</head>
+<body>
+
+    <script src="../jquery/jqueryfile.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#child-c").parent().css('background','red')
+            $("#inner").parent().css('background','red')
+            $("#child-c").parents().css('background','red')
+            $("#inner").parents().css('background','red')
+            $("#child-c").parentsUntil('#main-outer').css('background','red')
+            $("#inner").parentsUntil('#main-outer').css('background','red')
+            $("#inner").offsetParent().css('background','red')
+            $("#inner").closest('ul').css('background','red')
+        })
+    </script>
+    
+</body>
+</html>

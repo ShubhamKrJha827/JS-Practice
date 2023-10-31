@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<body>
+    <button onclick="openWindow()">open window</button>
+    <button onclick="closeWindow()">close window</button>
+
+    <script>
+        var maywindow;
+        function openWindow(){
+           maywindow= window.open("http://www.yahoobaba.net","","width=500px,height=500px,left=100px,top=200px");
+            // window.open("http://www.yahoobaba.net","_parent","width=500px,height=500px");
+            // window.open("http://www.yahoobaba.net");
+            // window.open();
+
+        }
+
+        function closeWindow(){
+            maywindow.close();
+
+        }
+    </script>
+
+
+    
+</body>
+</html>

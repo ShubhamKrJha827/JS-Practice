@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+    <script>
+        var element;
+        // document.getElementById(Header).onclick = abc;
+        // function abc (){
+        //     document.getElementById(Header).style.background="green";
+
+        // }
+
+
+        // document.getElementById(Header).onmouseenter = abc;
+        // function abc (){
+        //     document.getElementById(Header).style.background="green";
+
+        // }
+
+
+        // document.getElementById(Header).addEventListener("click",abc);
+        
+
+        // function abc (){
+        //     document.getElementById(Header).style.border="10px solid red";
+
+        // }
+
+        // document.getElementById(Header).addEventListener("mouseenter",function(){
+        //     document.getElementById(Header).style.background="green";
+
+        // });
+
+
+        // document.getElementById(Header).addEventListener("click",abc);
+        // document.getElementById(Header).addEventListener("click",function(){
+        //     document.getElementById(Header).style.background="green";
+
+        // });
+        
+
+        // function abc (){
+        //     document.getElementById(Header).style.border="10px solid red";
+
+        // }
+
+        // document.getElementById(Header).addEventListener("click",abc);
+        // document.getElementById(Header).addEventListener("click",function(){
+        //     this.style.border="10px solid red";
+
+        // });
+        
+
+        // function abc (){
+        //     document.getElementById(Header).style.background="green";
+
+        // }
+
+
+
+
+
+        // document.querySelector("#inner").addEventListener('click',function(){
+        //     alert('inner div');
+        // },true);
+
+
+        // document.querySelector("#outer").addEventListener('click',function(){
+        //     alert('outer div');
+        // },true);
+
+
+        // document.querySelector("#inner").addEventListener('click',function(){
+        //     alert('inner div');
+        // },false);
+
+
+        // document.querySelector("#outer").addEventListener('click',function(){
+        //     alert('outer div');
+        // },false);
+
+
+        document.getElementById(Header).addEventListener("mouseleave",abc);
+        document.getElementById(Header).addEventListener('click',xyz);
+
+         function abc (){
+             document.getElementById(Header).style.background="green";
+
+         }
+         function xyz(){
+            document.getElementById(Header).removeEventListener('mouseleave',abc);
+
+         }
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

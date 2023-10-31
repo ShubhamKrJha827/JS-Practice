@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+
+<body>
+    <div id="test">
+        <h2>shubham : about your self</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, officia.</p>
+        <div>
+            <p id="abc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum neque, sed rem non magnam officia.
+            </p>
+
+        </div>
+
+    </div>
+    <script>
+        var parrentElement = document.getElementById("test");
+        var target = document.getElementById("abc");
+
+        var find = parrentElement.contains(target);
+        console.log(find);
+
+    </script>
+
+</body>
+
+</html>

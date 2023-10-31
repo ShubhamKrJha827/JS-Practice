@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+    <style>
+        h1{font-size: 25px;}
+        #box{
+            background: green;
+            padding: 10px;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h1>shubham</h1>
+    <div id="box" class=" test">
+        <h3>shubham</h3>
+        <p>this a dhjdhisslkpsjolxpxjsloxjhxpujxkpdidj.</p>
+    </div>
+    <button id="apendbtn">remove event</button>
+    <button id="prepandbtn">remove</button>
+    <script src="../jquery/jqueryfile.js"></script>
+    <script>
+         $(document).ready(function(){
+            $("#apendbtn").click(function(){
+                $("#box").append("<h2>shubham is a good boy</h2>")
+            })
+            $("#prepandbtn").click(function(){
+                $("#box").prepend("<h2>shubham is </h2>")
+            })
+         })
+    </script>
+    
+</body>
+</html>

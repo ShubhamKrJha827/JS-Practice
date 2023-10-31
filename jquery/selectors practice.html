@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+    <style>
+        body{font-family: arial;}
+        #test{
+            padding: 10px;
+            border: 1px solid red;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>shubham jha </h1>
+    <div id="test" class="box">
+        <h2>test box2 </h2>
+        <p>rshvjsbxkbxkxhxkbzkhsusohgdudisbxxoshssshbsksj</p>
+
+    </div>
+    <ul id="list">
+        <li>orangge</li>
+        <li class="box">apple</li>
+        <li>orangge</li>
+        <li class="box">apple</li>
+    </ul>
+    <script src="../jquery/jqueryfile.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("ul li:lt(2)").css("border","2px solid red");
+            // $("ul li:gt(1)").css("border","2px solid red");
+            // $("ul li:gt(2)").css("border","2px solid red");
+            // $("ul li:eq(0)").css("border","2px solid red");
+            // $("ul li:eq(2)").css("border","2px solid red");
+            // $('#list').css("color","red");
+            // $('#list').css("border","2px solid red");
+            // $('#list li').css("border","2px solid blue");
+            // $('.box').css("border","2px solid red");
+            // $('*').css("border","2px solid blue");
+            // $(' li:first').css("border","2px solid blue");
+            // $(' li:last').css("border","2px solid blue");
+            
+        })
+    </script>
+    
+</body>
+</html>

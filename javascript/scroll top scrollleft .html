@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+    <style>
+        #box {
+            width: 400px;
+            height: 400px;
+            background: pink;
+            border: 1px solid red;
+            overflow: auto;
+        }
+        #inner-box{
+            background: lightgreen;
+            width: 1000px;
+            height: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>shubham:about your self</h1>
+    <div id="box">
+        <div id="inner-box"></div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, reprehenderit fugit nemo in
+        reiciendis odio architecto id culpa, fuga cupiditate atque illo quos totam rem dolorem? Cupiditate libero ipsum
+        veniam asperiores odit beatae quaerat ducimus quis quia magnam molestias dignissimos accusamus suscipit nesciunt
+        minus vel quae, temporibus deserunt expedita sapiente? Itaque doloremque ipsum qui molestiae aut! Adipisci iusto
+        laudantium corrupti deleniti. Deserunt nemo vel rem! Voluptate quibusdam, minima sed reiciendis alias dicta
+        facilis rerum consectetur provident inventore odit optio eaque distinctio quidem ut excepturi odio totam itaque,
+        accusamus iure sequi voluptas officia nostrum laboriosam! Est repudiandae cupiditate fugit, libero, cumque odit
+        recusandae sit provident voluptas, placeat repellat? Velit natus laborum, perferendis molestias inventore
+        officiis eligendi quos, similique iusto illo, at obcaecati harum earum ex assumenda ad voluptatem eum fugiat et
+        dignissimos omnis? Id voluptatum illo, et praesentium reprehenderit cupiditate amet maiores vitae nihil, tenetur
+        natus provident ipsum quis laboriosam fugiat quibusdam sequi earum soluta rerum. Nulla provident blanditiis
+        sapiente quidem asperiores obcaecati, cupiditate animi cum, ut quisquam modi molestiae possimus. Laborum
+        recusandae nisi aliquam et, vitae laboriosam eius voluptatum in earum perferendis sed dolore amet odit totam ut,
+        veniam minima fuga corporis doloribus! Unde placeat repellat excepturi perspiciatis, adipisci sint fugiat,
+        magnam esse tempora ad ab minus praesentium pariatur nam? Non omnis itaque iusto natus eveniet, cupiditate
+        aliquam harum sit id repudiandae soluta tempore corporis, similique, quos reprehenderit dignissimos atque quam
+        provident maxime a magni amet. Saepe cum ut doloremque non cupiditate soluta quasi sunt nihil officiis
+        similique, voluptas iste repellat aliquam rerum quia fugit architecto voluptatum reprehenderit optio corrupti
+        neque voluptate repudiandae nostrum. Molestias, laudantium fugiat? Saepe impedit, ratione molestiae praesentium
+        iste dicta nisi animi laborum sint placeat minus reiciendis voluptas. Nam mollitia, exercitationem recusandae
+        culpa obcaecati unde veritatis earum provident dolor corporis tenetur tempora nulla. Doloremque accusamus quo
+        corrupti voluptatum, illum aut? Voluptate, adipisci doloribus voluptatibus quos odit fugit vero consequatur sit
+        ut, praesentium excepturi, rem eum saepe animi. Omnis, reprehenderit sequi molestiae ut modi provident ea
+        quaerat facilis neque perferendis architecto, pariatur dolor eius, consequuntur recusandae! Earum molestias
+        asperiores consequuntur quas magni dicta rerum modi veniam quidem! Neque ullam provident officia sit, vitae fuga
+        modi nihil itaque explicabo aspernatur minima reiciendis qui laudantium, unde alias adipisci illum vero sed. Vel
+        excepturi provident delectus, maxime quos repellat facere consectetur eius voluptates laborum impedit, suscipit,
+        voluptas laudantium repudiandae libero omnis exercitationem magnam voluptatibus nostrum repellendus ea pariatur
+        nesciunt quaerat? Quibusdam quod, reiciendis animi officiis perferendis eius nulla cum in aspernatur libero?
+        Illum molestias eum labore accusamus, quos impedit incidunt dolores est facere quam nisi fugiat facilis
+        nesciunt, temporibus totam tempore natus aliquam unde exercitationem nam doloremque eos minima! Deleniti odit
+        excepturi reiciendis harum ducimus alias ullam magni, ad vel veniam placeat sunt autem dolores quibusdam? Optio
+        quam quas numquam eius non beatae culpa dolor laborum? Illo officiis quas sapiente a pariatur suscipit obcaecati
+        qui magni ab. Voluptatum, expedita deleniti. Fugiat sapiente maiores nostrum quam vel voluptatibus iusto dolor
+        voluptatem assumenda, facere voluptates, eligendi pariatur ipsum porro, quaerat obcaecati nam.</div>
+
+        <script>
+            const target =document.querySelector("#box")
+            target.addEventListener('scroll',() => {
+                console.clear();
+                console.log("scrollTop :" + target.scrollTop);
+                console.log("scrollLeft :" + target.scrollLeft);
+
+            });
+        </script>
+
+</body>
+
+</html>

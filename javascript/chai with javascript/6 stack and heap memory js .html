@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chai js interview purpose</title>
+    <script>
+        // stack use (primitive) , heap use (non-primitive)
+        // example stack;
+        let myyoutubename = "shubham jha"
+        let anothername =myyoutubename
+        anothername = "jhabau"
+        console.log(myyoutubename);
+        console.log(anothername);
+
+        // example heap;
+
+        let userone = {
+            email: "user@google.com",
+            upi : "@user@ybl"
+        }
+        let usertwo = userone
+        usertwo.email = "shubham@gmail.com"
+        console.log(userone.email)
+        console.log(usertwo.email)
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<body>
+    <button onclick="openWindow()">open window</button>
+    <button onclick="resizeWindow()">resize window</button>
+
+
+    <script>
+        var maywindow;
+        function openWindow(){
+           maywindow= window.open("","","width=200px,height=200px,left=100px,top=200px")
+           maywindow.document.write("<p>this is may window</p>")
+        }
+        function resizeWindow(){
+            // maywindow.resizeTo(400,400);
+            maywindow.resizeBy(400,400);
+        }
+    </script>
+    
+</body>
+</html>

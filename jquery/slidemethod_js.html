@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+</head>
+<body>
+    <h1>shubham</h1>
+    <div id="box" class="abx">
+        <h3>shubham</h3>
+        <p>this a dhjdhisslkpsjolxpxjto you abiutsloxjhxpujxkpdidj.</p>
+
+    </div>
+    <button id="slideupbtn">slideup</button>
+    <button id="slidedownbtn">slidedown</button>
+    <button id="slidetogglebtn">slidetoggle</button>
+    <script src="../jquery/jqueryfile.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#slideupbtn").click(function(){
+                $("#box").slideUp()
+                // $("#box").slideUp('slow')
+                // $("#box").slideUp('fast')
+                // $("#box").slideUp(2000)
+                $("#box").slideUp(2000,function(){
+                    console.log("shubham jha")
+                })
+            })
+            $("#slidedownbtn").click(function(){
+                $("#box").slideDown()
+            })
+            $("#slidetogglebtn").click(function(){
+                $("#box").slideToggle()
+            })
+        })
+    </script>
+    
+</body>
+</html>

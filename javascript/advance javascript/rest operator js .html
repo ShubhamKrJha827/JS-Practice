@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>advancejavascript</title>
+    <script>
+         function sum (name,course,  ...abc ){
+            console.log(arguments);
+            document.write(`hello ${name} of  ${course} :`);
+            let sum = 0;
+            for(let i in abc){
+                sum += abc[i];
+            }
+            document.write(sum + "<br>");
+        }
+        sum(" shubham","btech",20,30 );
+         sum( "baba","bca",10,40,30);
+         sum ("jha","ba",20,40,20,30,50);
+
+
+
+
+        // function sum (){
+        //     console.log(arguments);
+        //     let sum = 0;
+        //     for(let i in arguments){
+        //         sum += arguments[i];
+        //     }
+        //     document.write(sum + "<br>");
+        // }
+        // sum(20,30);
+        // sum(10,40,30);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

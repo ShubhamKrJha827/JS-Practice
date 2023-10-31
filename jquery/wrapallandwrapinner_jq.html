@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+    <style>
+        #test {
+            background-color: blue;
+            border: 1px solid red;
+        }
+
+        .red {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>shubham</h1>
+    <div id="box">
+        <h3>shubham</h3>
+        <p>this a dhjdhisslkpsjolxpxjto you abiutsloxjhxpujxkpdidj.</p>
+
+    </div>
+    <button id="wrapAllbtn">wrapall</button>
+    <button id="wrapinnerbtn">wrapinner</button>
+    <script src="../jquery/jqueryfile.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#wrapAllbtn").click(function(){
+                $("p").wrapAll('<div id="test"></div>');
+            });
+            $("#wrapinnerbtn").click(function () {
+                $("h1").wrapInner('<span class="red"></span>');
+            });
+        });
+    </script>
+
+</body>
+
+</html>

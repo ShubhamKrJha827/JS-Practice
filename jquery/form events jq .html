@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <h1>form events</h1>
+    <form action="" id="box">
+        <label for="">name</label><br>
+        <input type="text" id="sform"><br><br>
+        <label for="">class</label><br>
+        <input type="text" id="sform1"><br><br>
+        <label for="">country</label>
+        <select id="scountry">
+            <option value="india">india</option>
+            <option value="pak">pak</option>
+            <option value="chena">chena</option>
+        </select>
+        <br><br>
+        <input type="submit">
+    </form>
+    <div id="test" style="border : 1px solid red;margin-top: 30px; "></div>
+    <script src="../jquery/jqueryfile.js">
+
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#sform,#sform1,#scountry').focus(function () {
+                $('#sform,#sform1,#scountry').css('background-color', 'green');
+                //  $('this').css('background-color','green');
+            })
+
+            $('#sform,#sform1,#scountry').blur(function () {
+                $('#sform,#sform1,#scountry').css('background-color', '');
+            })
+            $('#scountry').change(function () {
+                //   $('#scountry').css('background-color','pink');
+                var a = $('#scountry').val()
+                $('#test').html(a)
+            })
+            $('#sform,#sform1').select(function () {
+                $('#sform,#sform1').css('background-color', 'yellow');
+
+
+
+            })
+            $('#box').submit(function () {
+                // console.log("form submited"); 
+                alert("form submited");          
+
+            })
+
+
+        })
+    </script>
+
+</body>
+
+</html>

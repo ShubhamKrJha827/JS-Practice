@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+    <style>
+        #box{
+            width: 400px;
+            height: 200px;
+            background: blanchedalmond;
+            padding: 15px;
+            font-size: 40px;
+            font-weight: bold;
+            border: 5px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+
+
+    <script>
+        var target = document.querySelector("#box");
+        window.addEventListener('offline', function(){
+            target.innerHTML = "you are offline";
+            target.style. backgroundcolor = 'pink';
+        })
+        window.addEventListener('online', function(){
+            target.innerHTML = "you are online";
+            target.style. backgroundcolor = 'lightgreen';
+        })
+
+
+        // console.log(navigator.onLine);
+
+        
+        // if(navigator.onLine){
+        //     console.log("online");
+
+        // }else{
+        //     console.log("ofline");
+
+        // }
+    </script>
+</body>
+</html>

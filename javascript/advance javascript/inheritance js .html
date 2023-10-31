@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>advancejavascript</title>
+    <script>
+        class employe {
+            constructor(name,age,salary ){
+                this.empname = name;
+                this.empage = age; 
+                this.empsalary = salary;
+                console.log("constructor: employe");
+            }
+            info(){
+                document.write(`<h3>employe class</h3>
+                name:${this.empname}<br>
+                age:${this.empage}<br>
+                salary:${this.empsalary}<br>
+                `);
+
+            }
+        }
+
+        class manager extends employe{
+           
+           info(){
+            let ta  = 1000;
+           let pa = 300;
+           let totalsalary= this.empsalary + ta + pa ;
+
+                document.write(`<h3>manager class</h3>
+                name:${this.empname}<br>
+                age:${this.empage}<br>
+                salary:${totalsalary}<br>
+                `);
+
+            }
+                
+
+
+        }
+        class test extends manager{
+
+        }
+        let a = new test (" shubham",25,2000);
+        // let a = new manager (" shubham",25,2000);
+        // let b = new employe (" jha",20,1000);
+        a.info();
+        // b.info();
+
+
+
+        //   class employe {
+        //     constructor(name ){
+        //         this.empname = name 
+        //         console.log("constructor: employe");
+        //     }
+        //     info(){
+        //         console.log("employe name :" + this.empname);
+
+        //     }
+        // }
+
+        // class manager extends employe{
+        //     info(){
+        //         super.info();
+        //         console.log("manager name :" + this.empname);
+
+        //     }
+                
+
+
+        // }
+        // let a = new manager (" shubham");
+        // a.info();
+
+
+
+
+
+        //  class employe {
+        //     constructor(name ){
+        //         console.log("constructor: employe" + name);
+        //     }
+        // }
+        // class manager extends employe{
+        //     constructor(name ){
+        //         super();
+        //         console.log("constructor: employe" + name);
+        //     }
+
+        // }
+        // let a = new manager (" shubham"); 
+
+
+
+        // class employe {
+        //     constructor(name ){
+        //         console.log("constructor: employe" + name);
+        //     }
+        // }
+        // class manager extends employe{
+
+        // }
+        // let a = new manager (" shubham"); 
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

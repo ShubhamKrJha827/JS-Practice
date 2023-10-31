@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+</head>
+<body>
+    <h1>shubham</h1>
+    <div id="box" class="abx">
+        <h3>shubham</h3>
+        <p>this a dhjdhisslkpsjolxpxjto you abiutsloxjhxpujxkpdidj.</p>
+
+    </div>
+    <button id="hasbtn">hasclass</button>
+    <script src="../jquery/jqueryfile.js"></script>
+    <script>
+         $(document).ready(function(){
+            $('#hasbtn').click(function(){
+                // console.log($("#box").hasClass("abx"))
+               var x =  $("#box").hasClass("abx")
+               if(x==true){
+                console.log('yes')
+               }else{
+                console.log('no')
+               }
+               
+            })
+
+            
+               
+            })
+    </script>
+    
+</body>
+</html>

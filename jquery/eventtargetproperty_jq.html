@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+</head>
+<body>
+    <div id="box">
+        <h1>shubham jha</h1>
+        <p>hgsjbhsihsihsishs</p>
+        <button>test button</button>
+    </div>
+    <br>
+    <h3></h3>
+
+    <script src="../jquery/jqueryfile.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#box").on("click",function(){
+                // $('h3').html( "target Element:" + event.target.nodeName)
+                $('h3').html( "target Element:" + event.target.innerHtml)
+
+            });
+            
+                
+            
+        });
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+</head>
+<body>
+    <div id="box">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, incidunt?</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non suscipit quidem molestias.</p>
+
+    </div>
+    <script src="../jquery/jqueryfile.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("p").each(function(i){
+                $(this).on("click",{value:i},function(event){
+                    alert(event.data.value);
+                })
+               
+
+            });
+
+            
+            
+                
+            
+        });
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+    <style>
+         #box{
+            border: 1px solid red;
+            padding: 10px;
+            height: 100px;
+            width: 100px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <h1>shubham</h1>
+    <div id="box" class="abx">
+        <h3>shubham</h3>
+        <p>haii this is a boy</p>
+        
+
+    </div>
+    <button id="animatebtn">animate</button>
+    <script src="../jquery/jqueryfile.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#animatebtn").click(function(){
+                // $("#box").css('background','pink').slideUp().slideDown();
+                $("#box").css('background','pink').slideUp(2000).slideDown(2000);
+            })
+        })
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+</head>
+<body>
+
+    <script src="../jquery/jqueryfile.js"></script>
+    <script>
+        $(document).ready(function(){  
+            $("#inner").children().css('background','red')
+            $("#outer").children().css('background','red')
+
+
+            $("#inner").find('.test').css('background','red')
+            
+        })
+    </script>
+    
+</body>
+</html>

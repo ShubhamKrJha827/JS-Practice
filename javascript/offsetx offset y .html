@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+    <style>
+        #box{
+            width:400px ;
+            height:200px ;
+            margin:10px ;
+            background: pink;
+            border: 1px solid red;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>shubham:about your self</h2>
+    <div id="box"></div>
+
+    <script>
+       var target =  document.querySelector('#box');
+       target.addEventListener('mousemove', function(e){
+        console.clear();
+        var x = e.offsetX;
+        var y = e.offsetY;
+        console.log("offsetX :" + x);
+        console.log("offsetY:" + y);
+
+       });
+
+    </script>
+
+    
+</body>
+</html>

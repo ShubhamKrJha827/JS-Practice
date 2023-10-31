@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surya Vision</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* @media screen and (min-width: 600px) {
+                .menu-list {
+                    background-color: red;
+                }
+            } */
+
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .abc {
+            position: fixed;
+            z-index: 1;
+            background-color: rgb(3, 3, 65);
+            width: 180px;
+            color: white;
+            padding: 10px;
+            /* padding-left: 20px; */
+            /* text-align: center; */
+            display: none;
+
+        }
+
+        .abc a {
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: 600;
+            color: white;
+        }
+
+        .show-modal {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row" style=" background: black;">
+            <div class="col-md-1">
+                 <img src="./image/7.jpg" alt="surya"
+                style="height: 80px; width: 100px; padding: 5px; margin-left: 10%; "> 
+
+            </div>
+            <div class="col-md-10">
+                <ul class="menu-list" style="display: flex;justify-content: space-around; margin-top: 20px" type="none">
+                    <li> <a href="surya_vision_web_page.html" class="nav-link fw-bold text-white">Home </a></li>
+                    <li id="companyId"> <a href="mission_and_vision.html" class="nav-link fw-bold text-white">
+                            Company</a>
+                        <div class="abc" id="modal-cardId">
+                            <a href="overview.html">Overview</a> <br>
+                            <a href="mission_and_vision.html">Mission And Vision</a> <br>
+                            <a href="form_.html">Feedback Form</a>
+
+                        </div>
+                    </li>
+                    <li><a href="image.html" class="nav-link fw-bold text-white">Image</a></li>
+                    <li> <a href="#" class="nav-link fw-bold text-white">Buy & Win </a></li>
+                    <li> <a href="#" class="nav-link fw-bold text-white">News & Events </a></li>
+                    <li> <a href="#" class="nav-link fw-bold text-white">Service</a></li>
+                    <li> <a href="form_.html" class="nav-link fw-bold text-white">Contact us </a></li>
+
+
+
+
+            </div>
+            </ul>
+
+
+
+        </div>
+
+
+    </div>
+    <section>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://content.jdmagicbox.com/comp/bareilly/m7/9999px581.x581.180302223052.d4m7/catalogue/value-plus-rampur-garden-bareilly-electronic-goods-showrooms-ddwyyu8pbb.jpg?clr="
+                        class="d-block w-100 p-20" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://lh3.googleusercontent.com/p/AF1QipNI1voi3kaENXBPMQIRdQsT63XTRGjZ-fe1cLI8=w1080-h608-p-k-no-v0"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://adityavision.in/images/2022/12/09/customer-pic-for-in-1.jpg" class="d-block w-100"
+                        alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <section style="display: flex; margin-top: 40px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="https://adityavision.in/images/2022/12/09/hamara-pariwar.gif" alt="" width="80%"
+                        height="80%">
+
+                </div>
+                <div class="col-md-6">
+                    <h1 style="margin-left: 50px; color: black;" class="h1">Surya<span> Vision </span>
+                    </h1>
+                    <h3 style="margin-left: 50px; color: blue;">Retailing Technology to Remotest of Households.
+                    </h3>
+                    <p style="margin-left: 50px;">surya Vision is a modern multi-brand consumer electronics retail
+                        chain Headquartered in Aurangabad, Bihar. The journey started with just one retail store in
+                        Aurangabad way
+                        back in 2023 and currently, in the 3rd decade of its journey the company has grown from strength
+                        to strength to what is now a chain of most trusted consumer electronics retail stores with
+                        presence in all districts of Bihar .
+
+
+                    </p>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </section>
+    <section
+        style="display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 40px;">
+        <div class="container">
+            <div class="row" style="background-color:whitesmoke;">
+
+
+
+
+                <h1 style="text-align: center; color:black" class="h2">Our Company</h1>
+                <div class=" col-md-4">
+
+                    <img src="https://adityavision.in/images/2022/12/14/mission_original21.jpg" width="70%"
+                        height="180px" alt="">
+                    <h3>Mision</h3>
+                    <p>Surya Vision’s mission is to serve the people of the state with world-class products at a price
+                        point that no one else could match.
+
+
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <img src="https://adityavision.in/images/2022/12/14/milestones_orig.jpg" width="70%" height="180px"
+                        alt="">
+                    <h3>Milestone
+                    </h3>
+                    <p>Over its’ journey of two decades, the company has managed to achieve several milestones while
+                        creating new benchmarks for its competitors.
+
+
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <img src="https://adityavision.in/images/2022/12/14/people_orig.jpg" width="70%" height="180px"
+                        alt="">
+                    <h3> People</h3>
+                    <p>Customer satisfaction is something that is considered as the
+                        prime aim of Surya Vision.
+
+
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section
+        style="display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 40px;">
+        <div class="container">
+            <div class="row">
+
+
+
+
+                <h1 style="text-align: center; color: black" class="h2">Our Service</h1>
+                <div class=" col-md-4">
+
+                    <img src="data:image/jpeg;base64,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"
+                        width="70%" height="180px" alt="">
+                    <h3>Surya Seva
+                    </h3>
+                    <p>Your one stop solution for electronic related grievances.
+
+
+
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <img src="https://www.suryaelectronics.in/images/about_us_img.jpg" width="70%" height="180px"
+                        alt="">
+                    <h3>surya Suraksha
+
+                    </h3>
+                    <p>Surya Suraksha is the extended warranty programme of Surya Vision.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <img src="https://www.theweek.in/content/dam/week/news/biz-tech/images/2020/3/30/e-commerce.jpg.transform/schema-16x9/image.jpg"
+                        width="70%" height="180px" alt="">
+                    <h3> Express Delivery
+                    </h3>
+                    <p>Customer satisfaction is something that is considered as the prime aim of Surya Vision.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section
+        style="display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 40px;">
+        <div class="container">
+            <div class="row">
+                <h1 style="text-align: center; color:black" class="h2">Our Brands
+                </h1>
+                <p>We sell products manufactured by some of the most renowned domestic and international brands. Over
+                    the years we have earned a reputation as a reliable and trusted retailer for these brands.
+
+                </p>
+                <div class=" col-md-2">
+
+                    <img src="https://adityavision.in/images/1.jpg" width="70%" height="100px" alt="">
+
+                </div>
+                <div class="col-md-2">
+                    <img src="https://adityavision.in/images/3.jpg" width="70%" height="100px" alt="">
+
+                </div>
+                <div class="col-md-2">
+                    <img src="https://adityavision.in/images/2.jpg" width="70%" height="100px" alt="">
+
+                </div>
+                <div class=" col-md-2">
+
+                    <img src="https://adityavision.in/images/voltas.jpg" width="70%" height="100px" alt="">
+
+                </div>
+                <div class="col-md-2">
+                    <img src="https://adityavision.in/images/HAVELS.jpg" width="70%" height="100px" alt="">
+
+                </div>
+                <div class="col-md-2">
+                    <img src="https://adityavision.in/images/philips.jpg" width="70%" height="100px" alt="">
+
+                </div>
+
+                <div class="row" style=" margin-top: 20px;">
+                    <div class=" col-md-2">
+
+                        <img src="https://adityavision.in/images/Haier.jpg" width="70%" height="90px" alt="">
+
+                    </div>
+                    <div class="col-md-2">
+                        <img src="https://adityavision.in/images/BAJAJ.jpg" width="75%" height="90px" alt="">
+
+                    </div>
+                    <div class="col-md-2">
+                        <img src="https://adityavision.in/images/asus.jpg" width="73%" height="90px" alt="">
+
+                    </div>
+                    <div class=" col-md-2">
+
+                        <img src="https://adityavision.in/images/acer.jpg" width="78%" height="90px" alt="">
+
+                    </div>
+                    <div class="col-md-2">
+                        <img src="https://adityavision.in/images/panasonic.jpg" width="70%" height="90px" alt="">
+
+                    </div>
+                    <div class="col-md-2">
+                        <img src="https://adityavision.in/images/lenovo.jpg" width="75%" height="90px" alt="">
+
+                    </div>
+                </div>
+                <div class="row" style=" margin-top: 20px;">
+                    <div class=" col-md-2">
+
+                        <img src="https://adityavision.in/images/microsoft.jpg" width="70%" height="90px" alt="">
+
+                    </div>
+                    <div class="col-md-2">
+                        <img src="https://adityavision.in/images/oppo.jpg" width="75%" height="90px" alt="">
+
+                    </div>
+                    <div class="col-md-2">
+                        <img src="https://adityavision.in/images/MI.jpg" width="73%" height="90px" alt="">
+
+                    </div>
+                    <div class=" col-md-2">
+
+                        <img src="https://adityavision.in/images/vivo.jpg" width="78%" height="90px" alt="">
+
+                    </div>
+                    <div class="col-md-2">
+                        <img src="https://adityavision.in/images/jbl.jpg" width="70%" height="90px" alt="">
+
+                    </div>
+                    <div class="col-md-2">
+                        <img src="https://adityavision.in/images/realme.jpg" width="75%" height="90px" alt="">
+
+                    </div>
+                </div>
+    </section>
+
+    <footer class="footer">
+        <div style="background: rgba(12, 12, 12, 0.8);">
+            <div class="container">
+                <div class="row  py-5 text-light">
+                    <div class="col-md-3">
+                        <h5>About Our Company</h5>
+                        <p style="font-family: Poppins,sans-serif; font-weight: 400;">Surya Vision was incorporated on
+                            7th september 2023. The Company is engaged in trading of electronic items. The Company is a
+                            dynamic, fastest growing and service oriented electronic in Bihar (Aurangabad).
+                        </p>
+
+                        <div class=" bg-black w-75 ">
+                            <div class="d-flex">
+                                <i class="fa fa-clock-o p-4" style="font-size: 30px;"></i>
+                                <h5 style="font-size: 20px; padding-top: 5px;">talk to our support</h5>
+                            </div>
+                            <span style="position: relative;top: -20px; left: 40px;">9097333696/
+                                7979045079</span>
+
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <h5 style="margin-left: 30px;">MENU</h5>
+                        <ul style="list-style: none; ">
+                            <li><a href="surya_vision_web_page.html" style="text-decoration: none; color: white;"><i
+                                        class="	fa fa-angle-double-right"></i>Home</a></li>
+                            <li><a href="mission_and_vision.html" style="text-decoration: none; color: white;"><i
+                                        class="fa fa-angle-double-right"></i>Company</a></li>
+                            <li><a href="image.html" style="text-decoration: none; color: white;"><i
+                                        class="fa fa-angle-double-right"></i>image</a></li>
+                            <li><a href="" style="text-decoration: none; color: white;"><i
+                                        class="fa fa-angle-double-right"></i>Buy and win</a></li>
+                            <li><a href="" style="text-decoration: none; color: white;"><i
+                                        class="fa fa-angle-double-right"></i>News Events</a></li>
+                            <li><a href="" style="text-decoration: none; color: white;"><i
+                                        class="fa fa-angle-double-right"></i>Service</a></li>
+                            <li><a href="form_.html" style="text-decoration: none; color: white;"><i
+                                        class="fa fa-angle-double-right"></i>Contact Us</a></li>
+
+
+                        </ul>
+                    </div>
+                    <div class="col-md-4 ">
+                        <h5>Customer Care
+                        </h5>
+                        <div style="display: flex;">
+                            <img src="https://media.istockphoto.com/id/1312447731/photo/business-woman-at-office-stock-photo.jpg?s=612x612&w=0&k=20&c=wMTxmlwnehNF6NwhHBBfOahPqhE2zSWVkA-VD4yhDxY="
+                                alt="" width="100px" height="90px">
+
+
+                            <p class="mt-4" style="margin-left: 10px;"> 9097333696/7979045079</p>
+
+
+                        </div>
+                        <div style="display: flex; ">
+                            <img src="https://www.ttec.com/sites/default/files/csj-mature-digital-customer-experience.jpg"
+                                alt="" width="100px" height="90px" class="mt-4">
+
+
+                            <p style="margin-top: 50px; margin-left: 10px;"> nandank34@gmail.com</p>
+
+
+                        </div>
+                        <div style="display: flex;">
+                            <img src="https://imgk.timesnownews.com/story/1543400020-Google-Maps_0.jpg?tr=w-1200,h-900"
+                                alt="" width="100px" height="80px" class="mt-4">
+
+
+                            <p class="mt-4" style="margin-left: 10px;"> Address: more, beside of Reliance Trends,
+                                kalali, Rafiganj, Bihar 824125
+                            </p>
+
+
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>News Letter
+                        </h5>
+                        <p>Sign up today for hints, tips and the latest product news
+                        </p>
+
+
+                        <div class="input-group">
+                            <input type="email" placeholder="Email Address" class="form-control border border-black"
+                                style="background: transparent;">
+                            <div class="input-group-append">
+                                <span class="input-group-text bg-primary border border-black"><i
+                                        class="fa fa-send-o p-2 text-light"></i></span>
+                            </div>
+
+                        </div>
+                        <h4 style="margin-top: 20px;">Follow Us On
+                        </h4>
+                        <div style="margin-left: -40px ;">
+                            <ul type="none" style="display: flex; gap: 10px;">
+                                <li><a href="#"
+                                        style="text-decoration: none; color: white; border: 2px solid white; padding: 10px; border-radius: 35px;"
+                                        class="link fa fa-facebook"></a>
+
+
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        style="text-decoration: none;color: white; border: 2px solid white; padding: 10px; border-radius: 35px;"
+                                        class="fa fa-twitter"></a>
+                                </li>
+
+                                <li>
+                                    <a href="#"
+                                        style="text-decoration: none; color: white; border: 2px solid white; padding: 10px; border-radius: 35px;"
+                                        class="fa fa-youtube"></a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        style="text-decoration: none; color: white; border: 2px solid white; padding: 10px; border-radius: 35px;"
+                                        class="fa fa-google plus"></a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        style="text-decoration: none; color: white;border: 2px solid white; padding: 10px; border-radius: 35px;"
+                                        class="fa fa-instagram"></a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+    </footer>
+
+
+
+
+    <script>
+        let cardId = document.getElementById("modal-cardId");
+        let companyId = document.getElementById("companyId");
+
+        companyId.onmouseenter = () => {
+            cardId.classList.add("show-modal");
+        }
+
+        companyId.onmouseleave = () => {
+            cardId.classList.remove("show-modal");
+        }
+
+    </script>
+
+</body>
+
+
+</html>

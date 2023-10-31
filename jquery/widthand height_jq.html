@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+    <style>
+         #box {
+            background-color: blue;
+            border: 5px solid red;
+            padding: 20px;
+            margin: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>shubham</h1>
+    <div id="box">
+        <h3>shubham</h3>
+        <p>this a dhjdhisslkpsjolxpxjto you abiutsloxjhxpujxkpdidj.</p>
+
+    </div>
+    <button id="widthbtn">width</button>
+    <button id="heightbtn">height</button>
+    <script src="../jquery/jqueryfile.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#widthbtn').click(function(){
+            //    console.log( $('#box').width());
+
+            // $('#box').width("400px");// set width method this
+
+               console.clear();
+               console.log("width:" + $('#box').width());
+               console.log("innerwidth:" + $('#box').innerWidth());
+               console.log("outerwidth:" + $('#box').outerWidth());
+               console.log("outerwidth(true):" + $('#box').outerWidth(true));
+            })
+
+            $('#heightbtn').click(function(){
+            //    console.log( $('#box').width());
+
+            // $('#box').height("200px");// set height method this
+
+            
+               console.clear();
+               console.log("height:" + $('#box').height());
+               console.log("innerheight:" + $('#box').innerHeight());
+               console.log("outerheight:" + $('#box').outerHeight());
+               console.log("outerheight(true):" + $('#box').outerHeight(true));
+            })
+
+        })
+    </script>
+    
+</body>
+</html>

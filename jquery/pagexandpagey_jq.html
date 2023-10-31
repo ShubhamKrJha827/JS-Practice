@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+</head>
+<body>
+
+
+    <script src="../jquery/jqueryfile.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(document).mousemove(function(event){
+                $("#result").text("x:" + event.pageX + " y:" + event.pageY)
+
+
+                var x = event.pageX;
+                var y = event.pageY;
+
+                $('#box').offset({top:y,left:x});
+            })
+        })
+
+    </script>
+    
+</body>
+</html>

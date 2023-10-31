@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chai js</title>
+    <script>
+        // imediately invoked function expression (iife)
+
+        function chai (){
+            console.log(`db connected `);
+        }
+        chai()
+//named iife
+        (function chai (){
+            console.log(`db connected `);
+        })();
+// unnamed iife
+        ( () =>{
+            console.log(`db connected `);
+        })();
+
+
+        ( (name) =>{
+            console.log(`db connected two ${name}`);
+        })('shubham')
+
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

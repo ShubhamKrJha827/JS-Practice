@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>advancejavascript</title>
+    <script>
+         class student {
+            constructor(name , age){
+                this.studentname =name ;
+                this.studentage =age ;
+                console.log("constructor function");
+
+            }
+            hello(){
+                // console.log("hello " + this.studentname + " your age is " + this.studentage);
+
+                document.write(`hello ${this.studentname} your age is ${this.studentage}`);
+            }
+
+            static staticmethod(){
+                console.log("static function");
+            }
+        }
+        let a = new student("jha ji" , 23);
+        let b = new student("shubham jha" , 25);
+
+        
+        a.hello();
+        b.hello();
+
+        student.staticmethod();
+
+
+
+        // class student {
+        //     constructor(){
+        //         let name ;
+        //         console.log("constructor function");
+
+        //     }
+        //     hello(){
+        //         console.log("hello " + this.name);
+        //     }
+        // }
+        // let a = new student;
+        // a.name ="shubham kumar jha";
+        // a.hello();
+       
+
+
+        // class hello{
+        //     message(){
+        //         console.log("hello every one");
+        //     }
+        //     abc (){
+        //         console.log("soory everone");
+        //     }
+        // }
+
+        // let a = new hello;
+        // a.message();
+        // a.abc();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

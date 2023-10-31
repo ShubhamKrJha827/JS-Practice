@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+    <style>
+        body{font-family: arial;}
+        #test{
+            padding: 10px;
+            border: 1px solid red;
+            background: pink;
+        }
+    </style>
+</head>
+<body>
+    <h1>shubham jha </h1>
+    <div id="test" class="box">
+        <h2>test box2 </h2>
+        <p>rshvjsbxkbxkxhxkbzkhsusohgdudisbxxoshssshbsksj</p>
+
+    </div>
+    <script src="../jquery/jqueryfile.js">
+
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('body'). keypress(function(){
+                  $('body').css('background-color','green');
+                //  $('this').css('background-color','green');
+                // var a = $('body').html();
+                // console.log(a);
+            })
+            $('body'). keyup(function(){
+                  $('body').css('background-color','orange');
+                //  $('this').css('background-color','orange');
+               
+            })
+        })
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+    <style>
+        #box {
+            width: 400px;
+            height: 300px;
+            border: 1px solid red;
+            background: pink;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box"></div>
+
+    <script>
+
+        var target = document.querySelector('#box');
+        target.addEventListener("mousedown", function(e){
+            console.clear();
+            var text = e.button;
+
+            
+            var color;
+            switch (text) {
+                case 0:
+                    color = "green";
+                    
+                    break;
+                    case 1:
+                    color = "blue";
+                    
+                    break;
+                    case 2:
+                    color = "red";
+                    
+                    break;
+            
+                default:
+                    color = pink;
+                    break;
+            }
+            target.style.backgroundcolor = color;
+            
+            // console.log(color);
+
+        })
+
+
+           
+
+
+        // var target = document.querySelector("#box");
+        // target.addEventListener('mousedown',function(e){
+        //     console.clear();
+        //     var text = "you pressed button :" + e.button;
+        //     console.log(text);
+
+
+        //  })
+    </script>
+
+</body>
+
+</html>

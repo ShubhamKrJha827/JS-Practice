@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+    <style>
+        .red{
+            color: red;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>shubham</h1>
+    <div id="box" class=" test">
+        <h3>shubham</h3>
+        <p>this a dhjdhisslkpsjolxpxjsloxjhxpujxkpdidj.</p>
+    </div>
+    <button id="clickbutton">set value</button>
+    <script src="../jquery/jqueryfile.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#clickbutton").click(function(){
+                $('#box,h3').text ("shubham is a good boy")
+                $('#box,p').text ("shubham is a good boy and goog sytudent ")
+                $('#box,p').html ("<b>shubham is a good</b> boy and goog sytudent ")
+                $('#box,h3').attr ("class","red")
+            })
+        })
+    </script>
+</body>
+</html>

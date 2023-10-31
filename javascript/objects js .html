@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+    <script>
+        var a = {
+            firstname:"ram",
+            lastname :"kumar",
+            agae :18,
+            country :"india",
+            favmovies :['dhoom','shoola','krishna'],
+            living :{
+                'city' :'patna', 
+                'country' :'india',
+
+
+            },
+            
+            salary : function(){
+                return 25000;
+            },
+            fullname : function(){
+                return this.firstname + " " + this.lastname;
+            }
+             
+        }
+        console.log(a);
+        //  console.log(a.firstname);
+        //  document.write(a.favmovies);
+        // document.write(a.favmovies[1]);
+        // document.write(a.salary());
+        // document.write(a.fullname());
+        document.write(a.living.city);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

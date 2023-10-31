@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+</head>
+<body>
+    <div id="box">
+        <h1>shubham jha</h1>
+        <p>hgsjbhsihsihsishs</p>
+        <button>test button</button>
+    </div>
+
+    <script src="../jquery/jqueryfile.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#box").click(function(){
+               alert("the div element was clicked")
+
+            });
+
+            $("h2").click(function(){
+               alert("the h2 element was clicked")
+
+            });
+
+            $("p").click(function(event){
+                event.stopPropagation();
+               alert("the p element was clicked" + event.isPropagationStopped());
+
+            });
+
+            $("button").click(function(){
+               alert("the button element was clicked")
+
+            });
+            
+                
+            
+        });
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<body>
+    <div id="abc">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, iste?</p>
+
+    </div>
+
+
+    <script>
+        // var newElement = document.createElement("p");
+        // var newText =document.createTextNode("this is shubham");
+        // // var newComment =document.createComment("this is coment");
+
+
+        // newElement.appendChild(newText);
+
+        // document.getElementById("abc").appendChild(newElement);
+        // // document.getElementById("abc").appendChild(newComment);
+        
+        // console.log (newElement);
+
+
+
+        // inert before:-
+        var newElement = document.createElement("p");
+         var newText =document.createTextNode("this is shubham");
+         newElement.appendChild(newText);
+         var target = document.getElementById("abc");
+         target.insertBefore(newElement,target.childNodes[0]);
+
+
+    </script>
+    
+</body>
+</html>

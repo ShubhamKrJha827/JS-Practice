@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chai</title>
+    <script>
+        // singleton
+
+        // object literals
+
+        const mysym = Symbol("key1")
+
+        const jsuser = {
+            name:"shubham",
+            age : 19,
+            [mysym] : "mykey1",
+            lastlogindays : ["monday",saturday],
+            "full name" :"shubham jha"
+        }
+        console.log(jsuser.age)
+        console.log(jsuser["age"])
+        console.log(jsuser["full name"])
+        console.log(jsuser[mysym])
+
+        jsuser.name= "raj shubham"
+
+        object.freeze(jsuser)
+        
+        console.log(jsuser)
+
+
+        jsuser.greeting = function(){
+            console.log("hello js user")
+        }
+        console.log(jsuser.greeting());
+
+        jsuser.greetingtwo = function(){
+            console.log(`hello js user,${this.name} `);
+        }
+        console.log(jsuser.greetingtwo());
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
