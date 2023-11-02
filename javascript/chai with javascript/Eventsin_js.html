@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events with chai js</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // document.getElementById('owl').onclick = function(){
+    //     alert('own clicked')
+    // }
+
+    // document.getElementById('owl').addEventListener('click',function(){
+    //     alert('own clicked')
+    // })
+    //attachEvent()
+
+    // document.getElementById('owl').addEventListener('click',function(e){
+    //     console.log(e)
+    // },false)
+
+    // document.getElementById("images").addEventListener('click',function(e){
+    //     console.log("clicked inside the ul");
+    // },false)
+
+    // document.getElementById('owl').addEventListener('click',function(e){
+    //     console.log("own clicked")
+    // },false)
+
+    // document.getElementById("images").addEventListener('click',function(e){
+    //     console.log("clicked inside the ul");
+    // },true)
+
+    // document.getElementById('owl').addEventListener('click',function(e){
+    //     console.log("own clicked")
+    // },true)
+
+    // document.getElementById("images").addEventListener('click',function(e){
+    //     console.log("clicked inside the ul");
+    // },false)
+
+    // document.getElementById('owl').addEventListener('click',function(e){
+    //     console.log("own clicked")
+    //     e.stopPropagation()
+    // },false)
+
+    // document.getElementById("google").addEventListener('click',function(e){
+    //     console.log("google clicked");
+    //     e.preventDefault();
+
+    // },false)
+
+
+
+    // document.querySelector("#iamges").addEventListener('click',function(e){
+    //     console.log(e)
+    //     console.log(e.target)
+    //     console.log(e.target.parentNode);
+    //     let removeit = e.target.parentNode
+    //      removeit.remove()
+    //     // removeit.parentNode.removechild(removeit)
+
+    // },false)
+
+
+    document.querySelector("#iamges").addEventListener('click',function(e){  
+        console.log(e.target.tagName);
+        if (e.target.tagName==='IMG') {
+            console.log(e.target.id);
+            let removeit = e.target.parentNode
+         removeit.remove()
+            
+        }
+        
+        
+
+    },false)
+
+</script>
+</html>
