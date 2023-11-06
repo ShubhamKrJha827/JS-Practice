@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object orented oop</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // # javascript and classes-
+    // no
+    // #oop-
+    //this is object in js
+    //#object-
+    //-collection of properties and method 
+    //-tolowercase
+    //# parts of oop-
+    //object literal
+
+    //-constructor function
+   // -prototypes
+   //-classes
+   //-instances(new,this)
+
+  // # 4 pillars
+  //abstraction
+  //encapsulation
+ // inheritance
+ //polymorphism
+
+
+ //# object literal-
+   const user ={
+    username : "shubham",
+    signedin :true,
+    logincount:8,
+
+    getuserdetails:function(){
+        // console.log("got user details form function")
+        //console.log(`username:${this.username}`);
+        console.log(this);
+    }
+   }
+   console.log(user);
+   console.log(user.username);
+   //console.log(user.getuserdetails);
+   //console.log(this);
+
+   //constructor function-
+
+   function user (username,logincount,isloggedin){
+    this.username = ussername;
+    this.logincount = logincount;
+    this.isloggedin = isloggedin
+    return this
+
+
+   }
+//    const userone = user("shubham",12,true)
+//    const usertwo = user("hitesh",18,false)
+//    console.log(userone);
+
+   const userone = new user("shubham",12,true)
+   const usertwo = new user("hitesh",18,false)
+   console.log(userone);
+   console.log(usertwo);
+
+</script>
+</html>
