@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prototype</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // new and this keyboard  use  section -
+    function multipleby5(num){
+        return num*5
+
+    }
+    multipleby5.power = 2
+    console.log(multipleby5(5));
+    console.log(multipleby5.power);
+    console.log(multipleby5.prototype);
+
+
+
+
+    function createuser (username,score){
+        this.username = username
+        this.score = score
+    }
+    createuser.prototype.increment = function(){
+        this.score++
+    }
+
+    createuser.prototype.printme = function(){
+        console.log(`price is ${this.score}`);
+    }
+    const chai = new createuser("chai",25);
+    const tea = createuser("tea",200);
+
+    chai.printme()
+
+
+    //prototype  section - 
+
+    let myname = ("shubham     ")
+    let mychanel = ("shub     ")
+    console.log(myname.trim().length);
+    console.log(myname.length);
+
+
+    let myhero = ["thor","hero"]
+
+
+
+    let heropower = {
+        thor : "hamer",
+        spiderman : "slimg",
+
+        getspiderpower : function(){
+            console.log(`spidy power is ${this.spiderman}`);
+        }
+    }
+
+    object.prototype.shubham = function () {
+        console.log(`shubham is present in all object`)
+        
+    }
+
+    Array.prototype.heyshubham = function(){
+        console.log(`shubham says hello`)
+
+
+    }
+   // heropower.shubham()
+   myhero.shubham()
+   myhero.heyshubham()
+   //heropower.heyshubham()
+
+
+   // iheritance -
+
+   const user ={
+    name:"shubham"
+   }
+
+   const teacher = {
+    makevideo : true
+   }
+   const teachingsupport = {
+    isavailable : false
+   }
+   const tasupport = {
+    makeassigment: 'js assignment',
+    fulltime : true,
+    __proto__:teachingsupport
+   }
+   teacher.__proto__ = user
+
+   // modern syntax this -
+   object.setprototypeof(teachingsupport,teacher)
+
+
+
+//    let anotherusername = "shibham   "
+//    string.prototype.truelength = function (){
+//     console.log(`${this}`);
+//     console.log(`this length is: ${this.trim().length}`);
+//    }
+//    anotherusername.truelength()
+//    "hitesh".truelength()
+//    "itesh".truelength()
+
+</script>
+</html>
