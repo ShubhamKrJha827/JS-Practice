@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>call and this</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function setusername(username){
+        /// complex db calls
+        this.username = username
+        console.log("called");
+
+    }
+    function createuser(username,email,password){
+        setusername.call(this, username)
+
+
+        this.email = email
+        this.password = password
+
+    }
+    const chai = new createuser("chai","chai@fb.com","123")
+    console.log(chai)
+
+</script>
+</html>
