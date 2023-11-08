@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gettersetterandstackoverflow</title>
+</head>
+<body>
+    
+</body>
+<script>
+    class user {
+        constructor(email,password){
+            this.email = email;
+            this.password = password
+
+        }
+        get password(){
+            // return this._password.touppercase()
+            return `${this._password}shubham`
+        }
+        set password(value){
+            // this._password = value.touppercase()
+            this._password = value
+
+        }
+    }
+    const shubham = new user("shub@12gmail.com","abc")
+    console.log(shubham.password);
+
+</script>
+</html>
