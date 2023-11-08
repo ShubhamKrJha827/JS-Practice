@@ -6,9 +6,26 @@
     <title>bind</title>
 </head>
 <body>
+    <button>button clicked</button>
     
 </body>
 <script>
+    class react {
+        constructor(){
+            this.library = "react"
+            this.server = "http://localhost:300/"
+
+            // requerment
+            document.querySelector('button').addEventListener('click',this.handelclick.bind(this))
+        }
+        handelclick (){
+            console.log("button clicked");
+            console.log(this.server);
+            // console.log(this);
+
+        }
+    }
+    const aap = new react()
     
 </script>
 </html>
