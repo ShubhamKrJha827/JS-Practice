@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mathpi interview object related</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //console.log(Math.PI);
+    const descriptor = object.getOwnpropertyDescriptor(Math,"PI")
+    console.log(descriptor);
+
+    const chai = {
+        name : 'ginger chai ',
+        price: 145,
+        isavailable :true,
+
+        orderchai : function () {
+            console.log("chai nahi bani");
+            
+        }
+
+    }
+    console.log(object.getOwnpropertyDescriptor(chai,"name"))
+    object.defineproperty(chai,'name',{
+    //     Writable: false,
+    //     enumerable: false,
+            enumerable: true,
+     })
+    console.log(object.getOwnpropertyDescriptor(chai,"name"));
+
+    for (let [key,value] of object.entries(chai)) {
+        if (typeof value !== 'function') {
+            console.log(`${value}:${key}`)
+            
+        }
+        
+        
+    }
+       
+    
+
+</script>
+</html>
